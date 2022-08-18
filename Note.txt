@@ -1,0 +1,7 @@
+Trong mỗi file sẽ phải có 1 hàm if __name__ == "__main__":
+if __name__ == "__main__": 
+	GoiHamChay1()
+	GoiHamChay2()
+	GoiHamChayn()
+giải thích: Nếu chạy file nào có hàm if __name__ == "__main__": thì chỉ chạy các Ham trong file đó thôi, qua
+file khác mặc dù được import nhưng sẽ không chạy các hàm trong main
