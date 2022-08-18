@@ -19,21 +19,16 @@ def liet_ke_so_nguyen_to(a, b):
             print(i, end=' ')
 
 
-# Khoi lenh co the phat sinh loi
 try:
     # Nhap hai so tu ban phim
     # Ep kieu du lieu sang so nguyen
     a = int(input())
     b = int(input())
-
-    # Su dung cau truc re nhanh xu ly cac truong hop
     if a < 0 or b < 0:
         print("Vui long nhap so tu nhien!")
     elif a > b:
         print("So thu nhat lon hon so thu hai!")
     else:
         liet_ke_so_nguyen_to(a, b)
-
-# Khoi lenh duoc thuc thi khi loi xay ra
 except:
     print("Dinh dang dau vao khong hop le!")
