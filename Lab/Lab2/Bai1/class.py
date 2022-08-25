@@ -89,15 +89,6 @@ class DanhSachSV:
     def timSvSinhTruocNgay(self, ngay: datetime):
         return [sv for sv in self.dssv if sv.ngaySinh < ngay]
 
-# file = open("data.txt", "r", encoding="utf8")
-# read = file.readlines()
-# listSv = []
-
-# for i in read:
-#     if i not in listSv:
-#         listSv.append(i.strip())
-# print(listSv)
-
 
 sv1 = SinhVien(2015597, "Đoàn Quang Huy",
                datetime.strptime("13/02/2002", "%d/%m/%Y"))
