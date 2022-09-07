@@ -1,4 +1,6 @@
 from datetime import datetime
+
+
 class SinhVien:
     truong = "Đại học Đà Lạt"
 

@@ -1,18 +1,21 @@
 import math
-from posixpath import basename
 from HinhHoc import HinhHoc
 
 
 class HinhTron(HinhHoc):
 
     def __init__(self, bankinh: float) -> None:
+        self.__banKinh = bankinh
         super().__init__(bankinh)
 
+    def HinhTron(self, banKinh: float):
+        pass
+
     def TinhDienTich(self) -> float:
-        return pow(self.banKinh) * math.pi
+        return pow(self.__banKinh) * math.pi
 
     def xuat(self):
-        print(self.banKinh, self.tinhDienTich())
+        print(self.__banKinh, self.tinhDienTich())
 
     @property
     def banKinh(self):
