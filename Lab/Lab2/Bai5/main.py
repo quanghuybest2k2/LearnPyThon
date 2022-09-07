@@ -42,7 +42,12 @@ dssv.xuat()
 # for sv in kq:
 #     print(sv)
 
-diemRl = dssv.timSVDiemRLtu80(SinhVienChinhQuy)
+diemRl = dssv.TimSVCoDiemRenLuyen80()
 print("---------------")
 for sv in diemRl:
-    sv.xuat()
+    print(sv)
+
+print("Danh sách sinh viên là cao đẳng có ngày sinh trước 15/8/1999")
+sinhtruoc = dssv.TimSVsinhtrcngay()
+for sv in sinhtruoc:
+    print(sv)
