@@ -15,7 +15,7 @@ class Example(Frame):
 
         Style().configure("TFrame", bg="#333")
 
-        bard = Image.open("Lab4/Layout/img/Huy.jpg")
+        bard = Image.open("Layout/img/Huy.jpg")
         bard = bard.resize((100, 100), Image.ANTIALIAS)
         bardejov = ImageTk.PhotoImage(bard)
         lable1 = Label(self, image=bardejov)
