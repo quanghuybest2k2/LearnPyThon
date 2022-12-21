@@ -23,3 +23,29 @@ print(list_world[:2])  # ['Người yêu cũ', 2]
 print(list_world[2:])  # [['Con người', 'Động vật', 'Thực vật'], True]
 # lấy ngược cũng tương tự
 print(list_world[-3:-1])  # [2, ['Con người', 'Động vật', 'Thực vật']]
+# thay đổi giá trị thứ 0
+list_world[0] = "Ai cũng được"
+print(list_world)
+# sua vi tri trong khoang
+list_world[0:2] = ["Huy", 3]
+print(list_world)
+# chèn item (vt, value)
+list_world.insert(0, "Hi hi")
+print(list_world)
+# them(noi) item
+list_world.append("Them Item")
+print(list_world)
+# noi list
+name.extend(list_world)
+print(name)
+# xoa item trong list
+list_world.remove("Huy")
+print(list_world)
+# xoa theo vi tri index, neu không truyền vị trí list_world.pop() sẽ xóa phần tử cuối
+list_world.pop(3)
+print(list_world)
+# loop list
+# for i in list_world:
+#     print(i)
+for i in range(len(list_world)):
+    print(list_world[i])
